@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/x-icon" href="./Resources/favicon.ico">
+        <link rel="stylesheet" type="text/css" href="style.css" >
+        <script src="https://kit.fontawesome.com/fdb911b8f8.js" crossorigin="anonymous"></script>
+        <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js'></script>
+        <title>Online CV AP 4.0 NDR</title>
+    </head>
+    <body>
+        <div class="container">
+
+            <div class="top">
+                <div class="imgBx">
+                    <div class="box">
+                        <img id="picture" src="" alt="img">
+                    </div>
+                </div>
+                <div class="profileText">
+                    <h3 id="completeName"></h3>                                                       
+                </div>                
+            </div>
+
+            <div class="contentBox">
+                <div class="leftSide">
+                    <h3><i class="fa-regular fa-id-card fa-bounce fa-xl" id="icon"></i></i> Contacto</h3>
+                    <ul>
+                        <li>
+                            <span class="icon"><i class="fa-solid fa-mobile-screen-button fa-sm"></i></span>
+                            <span class="text" id="phone"></span>
+                        </li>
+                        <li>
+                            <span class="icon"><i class="fa-regular fa-envelope fa-sm"></i></span>
+                            <span class="text" id="email"></span>
+                        </li>
+                        <li>
+                            <span class="icon"><i class="fa-solid fa-earth-americas fa-sm"></i></span>
+                            <span class="text" id="earth"></span>
+                        </li>
+                        <li>
+                            <span class="icon"><i class="fa-solid fa-map-location-dot fa-sm"></i></span>
+                            <span class="text" id="ltn"></span>
+                        </li>
+                    </ul>
+                    <h3><i class="fa-solid fa-graduation-cap fa-bounce fa-xl" id="icon"></i> Estudios</h3>  
+                    <ul class="estudios">
+                        <li>
+                            <h5>2019-2023</h5>
+                            <h4>Master en zaraza III</h4>
+                            <h6>Universidad X</h6>
+                        </li>
+                        <li>
+                            <h5>2013-2018</h5>
+                            <h4>Master en zaraza II</h4>
+                            <h6>Secundario X</h6>
+                        </li>
+                        <li>
+                            <h5>2006-2012</h5>
+                            <h4>Master en zaraza I</h4>
+                            <h6>Primario X</h6>
+                        </li>
+                    </ul>
+                    <h3><i class="fa-solid fa-language fa-bounce fa-xl" id="icon"></i> Idiomas</h3>
+                    <ul class="idiomas">
+                        <li>
+                            <span class="text" id="language1"></span>
+                            <span class="percent">
+                                <div id="percent1"></div>
+                            </span>                            
+                        </li>
+                        <li>
+                            <span class="text" id="language2"></span>
+                            <span class="percent">
+                                <div id="percent2"></div>    
+                            </span>                            
+                        </li>
+                        <li>
+                            <span class="text" id="language3"></span>
+                            <span class="percent">
+                                <div id="percent3"></div>    
+                            </span>                            
+                        </li>
+                        <li>
+                            <span class="text" id="language4"></span>
+                            <span class="percent">
+                                <div id="percent4"></div>    
+                            </span>                            
+                        </li>
+                    </ul>
+                    <h3><i class="fa-solid fa-icons fa-bounce fa-xl" id="icon"></i> Pasatiempos</h3>
+                    <ul class="hobbies">
+                        <li><span class="icon"><i class="fa-solid fa-circle-notch fa-spin fa-sm"></i></span><p id="hobbie1"></p></li>
+                        <li><span class="icon"><i class="fa-solid fa-circle-notch fa-spin fa-sm"></i></span><p id="hobbie2"></p></li>
+                        <li><span class="icon"><i class="fa-solid fa-circle-notch fa-spin fa-sm"></i></span><p id="hobbie3"></p></li>
+                        <li><span class="icon"><i class="fa-solid fa-circle-notch fa-spin fa-sm"></i></span><p id="hobbie4"></p></li>
+                    </ul>
+                    <ul class="popup">
+                        <div class="popup" onclick="InvokePopup()"><i class="fa-brands fa-linkedin fa-fade fa-2xl" style="color: #0000ff;"></i> Mi verdadero perfil 
+                            <i class="fa-regular fa-face-grin-squint-tears fa-sm" style="color: #ff8000;"></i>
+                            <span class="popuptext" id="myPopup"><a id="myProfile" href="https://www.linkedin.com/in/nicol%C3%A1s-dami%C3%A1n-rodriguez-b9350463/" target="_blank">Click!</a></span>
+                        </div>  
+                    </ul>
+                </div>
+
+                <div class="rightSide">
+                    <div class="about">                        
+                        <h3><span id="job"></span></h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                           Obcaecati, esse aperiam dolorem ratione quaerat saepe quis quia dolores rerum praesentium quos! 
+                           Cupiditate numquam consequuntur eum atque fuga quaerat molestias vel.<br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                           Consequuntur ea illum nesciunt laudantium dolores voluptatum! Illo quam impedit qui nobis natus deserunt, 
+                           laudantium vero, tenetur, molestias nostrum consequuntur quos reprehenderit!</p>
+                    </div>
+                    <div class="about">
+                        <h3>Experiencia Laboral</h3>
+                        <div class="box">
+                            <div class="year_company">
+                                <h5>2014 - 2016</h5>
+                                <h5>Empresa <br>Ejemplo 2</h5>
+                            </div>
+                            <div class="text">
+                                <h4>Experiencia I</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                   Debitis deserunt maiores voluptatum laborum odio ea accusantium qui voluptatem quaerat repellendus, 
+                                   nulla itaque, voluptate sequi at ex ipsa enim esse assumenda?</p>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="year_company">
+                                <h5>2014 - 2012</h5>
+                                <h5>Empresa <br>Ejemplo 2</h5>
+                            </div>
+                            <div class="text">
+                                <h4>Experiencia II</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                   Debitis deserunt maiores voluptatum laborum odio ea accusantium qui voluptatem quaerat repellendus, 
+                                   nulla itaque, voluptate sequi at ex ipsa enim esse assumenda?</p>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="year_company">
+                                <h5>2012 - 2010</h5>
+                                <h5>Empresa <br>Ejemplo 3</h5>
+                            </div>
+                            <div class="text">
+                                <h4>Experiencia III</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                   Debitis deserunt maiores voluptatum laborum odio ea accusantium qui voluptatem quaerat repellendus, 
+                                   nulla itaque, voluptate sequi at ex ipsa enim esse assumenda?</p>
+                            </div>
+                        </div>                       
+                    </div>
+                    <div class="aboutSkills">             
+                        <h3>Algo más...</h3>               
+                        <iframe id="myFrame"></iframe>
+                    </div>                                              
+                </div>
+            </div>                     
+        </div>
+        <script src="functions.js"></script>         
+    </body>
+</html>
